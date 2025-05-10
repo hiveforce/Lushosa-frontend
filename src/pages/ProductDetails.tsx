@@ -1,9 +1,11 @@
+import Description from "../components/ProductDetails/Description";
 import Hero from "../components/ProductDetails/Hero";
 
 function ProductDetails() {
   return (
-    <div className="px-5 py-[38px]">
+    <div className="">
       <Hero />
+      <Description />
     </div>
   );
 }

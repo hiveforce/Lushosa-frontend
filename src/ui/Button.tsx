@@ -22,7 +22,12 @@ function Button({
       onClick={onClick}
     >
       {children}
-      {icon && <img src="/images/arrow-icon.png" alt="" className="w-[8px]" />}
+      {icon && type === "primary" && (
+        <img src="/images/arrow-icon.png" alt="" className="w-[8px]" />
+      )}
+      {icon && type === "secondary" && (
+        <img src="/images/arrow-black-icon.png" alt="" className="w-[8px]" />
+      )}
     </button>
   );
 }
