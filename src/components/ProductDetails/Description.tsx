@@ -1,6 +1,6 @@
 function Description() {
   return (
-    <div className="bg-primary-light-hover py-[75px] md:pb-[69px] lg:pb-[130px] px-6">
+    <div className="bg-primary-light-hover py-[75px] md:pb-[69px] lg:pb-[130px] px-6 lg:px-[109px]">
       <div className="text-[24px] font-semibold">Description</div>
       <p className="mt-6">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

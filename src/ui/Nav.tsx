@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "./Logo";
 
 function Nav() {
@@ -77,23 +77,32 @@ function Nav() {
             />
           </div>
           <div className="flex gap-[10px]">
-            <button className="bg-white p-2 md:p-[10px] rounded-[5px] ">
+            <Link
+              to="/wishlist"
+              className="bg-white p-2 md:p-[10px] rounded-[5px] "
+            >
               <img src="/images/heart-icon.png" alt="like-icon" className="" />
-            </button>
-            <button className="bg-white p-2 rounded-[5px] md:p-[10px] ">
+            </Link>
+            <Link
+              to="/user"
+              className="bg-white p-2 rounded-[5px] md:p-[10px] "
+            >
               <img
                 src="/images/profile-icon.png"
                 alt="profile-icon"
                 className="w-[12px]"
               />
-            </button>
-            <button className="bg-white p-2 rounded-[5px] md:p-[10px] ">
+            </Link>
+            <Link
+              to="/cart"
+              className="bg-white p-2 rounded-[5px] md:p-[10px] "
+            >
               <img
                 src="/images/cart-icon.png"
                 alt="cart-icon"
                 className="w-[12px]"
               />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

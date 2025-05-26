@@ -100,3 +100,55 @@ export const successStories = [
       "I never thought I could afford premium hair bundles until I discovered Lushosa's savingsplan. I made small payments every week, and before I knew it, I had saved enough for my dream hair!",
   },
 ];
+
+// ///////////////////////////////////////////////////////////////////////////////////////
+
+// ORDER DETAILS DATA
+
+export const stages = [
+  {
+    name: "Order Placed",
+    icon: "/images/order-placed-icon.png",
+  },
+  {
+    name: "Packaging",
+    icon: "/images/order-packaged-icon.png",
+  },
+  {
+    name: "On The Road",
+    icon: "/images/order-delivering-icon.png",
+  },
+  {
+    name: "Delivered",
+    icon: "/images/order-delivered-icon.png",
+  },
+];
+
+// USER NAV DATA
+
+export const userNavItems = [
+  {
+    title: "Dashboard",
+    icon: "/images/user-dashboard-icon.png",
+    activeIcon: "/images/user-dashboard-active-icon.png",
+    link: "/user",
+  },
+  {
+    title: "Order History",
+    icon: "/images/user-order-history-icon.png",
+    activeIcon: "/images/user-order-history-active-icon.png",
+    link: "/user/order-history",
+  },
+  {
+    title: "Track Order",
+    icon: "/images/user-trackorder-icon.png",
+    activeIcon: "/images/user-trackorder-icon.png",
+    link: "/user/track-order",
+  },
+  {
+    title: "Settings",
+    icon: "/images/user-settings-icon.png",
+    activeIcon: "/images/user-settings-active-icon.png",
+    link: "/user/settings",
+  },
+];
