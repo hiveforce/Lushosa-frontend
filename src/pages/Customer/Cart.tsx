@@ -1,6 +1,6 @@
-import CartItems from "../components/Cart/CartItems";
-import CartSummary from "../components/Cart/CartSummary";
-import SimilarProducts from "../ui/SimilarProducts";
+import CartItems from "../../components/Customer/Cart/CartItems";
+import CartSummary from "../../components/Customer/Cart/CartSummary";
+import SimilarProducts from "../../ui/SimilarProducts";
 
 function Cart() {
   return (

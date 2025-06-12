@@ -1,4 +1,4 @@
-import { successStories } from "../../utils/data";
+import { successStories } from "../../../utils/data";
 import Testimonial from "../LandingPage/Testimonial";
 
 function SuccessStories() {

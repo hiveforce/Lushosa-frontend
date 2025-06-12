@@ -1,19 +1,22 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LandingPage from "./pages/LandingPage";
-import Layout from "./pages/Layout";
-import Products from "./pages/Products";
-import SavingsPlan from "./pages/SavingsPlan";
-import AboutUs from "./pages/AboutUs";
-import Contact from "./pages/Contact";
-import ProductDetails from "./pages/ProductDetails";
-import Cart from "./pages/Cart";
+import LandingPage from "./pages/Customer/LandingPage";
+import Layout from "./pages/Customer/Layout";
+import Products from "./pages/Customer/Products";
+import SavingsPlan from "./pages/Customer/SavingsPlan";
+import AboutUs from "./pages/Customer/AboutUs";
+import Contact from "./pages/Customer/Contact";
+import ProductDetails from "./pages/Customer/ProductDetails";
+import Cart from "./pages/Customer/Cart";
 import UserLayout from "./pages/User/UserLayout";
 import UserDashboard from "./components/User/Dashboard/UserDashboard";
-import Wishlist from "./pages/Wishlist";
+import Wishlist from "./pages/Customer/Wishlist";
 import UserOrderHistory from "./pages/User/UserOrderHistory";
 import TrackOrder from "./pages/User/TrackOrder";
 import OrderDetails from "./pages/User/OrderDetails";
 import Settings from "./pages/User/Settings";
+import Checkout from "./pages/Customer/Checkout";
+import ResetPassword from "./components/Auth/ResetPassword";
+import Auth from "./pages/Auth";
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/auth" element={<Auth />} />
+            <Route path="/reset-password" element={<ResetPassword />} />
 
             <Route path="/user" element={<UserLayout />}>
               <Route index element={<UserDashboard />} />
@@ -41,6 +47,8 @@ function App() {
               <Route path="/user/settings" element={<Settings />} />
             </Route>
           </Route>
+
+          {/* ADMIN LAYOUT */}
         </Routes>
       </BrowserRouter>
     </div>

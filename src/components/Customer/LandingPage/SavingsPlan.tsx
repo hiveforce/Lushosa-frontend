@@ -1,5 +1,5 @@
-import Button from "../../ui/Button";
-import { savingsPlanData } from "../../utils/data";
+import Button from "../../../ui/Button";
+import { savingsPlanData } from "../../../utils/data";
 
 function SavingsPlan() {
   return (

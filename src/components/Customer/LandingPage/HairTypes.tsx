@@ -1,4 +1,4 @@
-import { hairCardData } from "../../utils/data";
+import { hairCardData } from "../../../utils/data";
 import HairTypeCard from "./HairTypeCard";
 
 function HairTypes() {

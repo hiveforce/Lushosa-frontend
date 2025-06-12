@@ -1,4 +1,4 @@
-import { testimonialData } from "../../utils/data";
+import { testimonialData } from "../../../utils/data";
 import Testimonial from "./Testimonial";
 
 function Testimonials() {

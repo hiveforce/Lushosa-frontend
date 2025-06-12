@@ -1,4 +1,4 @@
-import WishlistItems from "../components/Wishlist/WishlistItems";
+import WishlistItems from "../../components/Customer/Wishlist/WishlistItems";
 
 function Wishlist() {
   return (

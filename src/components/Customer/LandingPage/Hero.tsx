@@ -1,4 +1,4 @@
-import ButtonPrimary from "../../ui/Button";
+import ButtonPrimary from "../../../ui/Button";
 
 function Hero() {
   return (

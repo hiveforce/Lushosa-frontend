@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../../ui/Button";
 
 function CartSummary() {
@@ -42,9 +43,13 @@ function CartSummary() {
         </p>
       </div>
 
-      <Button type="others" className="w-full py-2 rounded-[24px]">
+      <Link
+        to={"/checkout"}
+        // type="others"
+        className="w-full py-2 rounded-[24px] bg-secondary-custom text-white text-[16px] font-semibold tex px-4 mx-auto mt-4"
+      >
         Proceed to Check-out
-      </Button>
+      </Link>
     </div>
   );
 }
