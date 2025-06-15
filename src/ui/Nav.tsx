@@ -1,69 +1,23 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "./Logo";
+import { useState } from "react";
+import NavLinks from "./NavLinks";
 
 function Nav() {
+  const [showNav, setShowNav] = useState(false);
+
   return (
-    <div className="bg-primary-header px-5 pt-[27px] pb-4 ">
+    <div className="bg-primary-header px-5 pt-[27px] pb-4 relative">
       <div className="flex justify-between items-center ">
         <div className="flex gap-2 items-center">
-          <button className="lg:hidden">
+          <button className="lg:hidden" onClick={() => setShowNav(true)}>
             <img src="/images/hamburger-icon.png" alt="" />
           </button>
           <Logo />
         </div>
         <div className="flex items-center gap-[28px]">
-          <ul className="lg:flex hidden gap-6">
-            <NavLink
-              to={"/"}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-secondary-custom"
-                  : "text-secondary-light-active font-medium text-[16px]"
-              }
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to={"/products"}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-secondary-custom"
-                  : "text-secondary-light-active font-medium text-[16px]"
-              }
-            >
-              Products
-            </NavLink>
-            <NavLink
-              to={"/saving-plan"}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-secondary-custom"
-                  : "text-secondary-light-active font-medium text-[16px]"
-              }
-            >
-              Saving Plan
-            </NavLink>
-            <NavLink
-              to={"/about-us"}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-secondary-custom"
-                  : "text-secondary-light-active font-medium text-[16px]"
-              }
-            >
-              About us
-            </NavLink>
-            <NavLink
-              to={"/contact"}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-secondary-custom"
-                  : "text-secondary-light-active font-medium text-[16px]"
-              }
-            >
-              Contact
-            </NavLink>
-          </ul>
+          <NavLinks className="hidden lg:flex" />
+
           <div className="relative hidden md:inline-flex">
             <input
               type="text"
@@ -118,6 +72,15 @@ function Nav() {
           className="absolute top-[18px] left-4"
         />
       </div>
+
+      {showNav && (
+        <div className="absolute bg-primary-header/90 z-20 inset-0 h-screen   lg:hidden">
+          <NavLinks
+            className="flex flex-col p-4 h-screen justify-center  relative items-center"
+            onClick={() => setShowNav(false)}
+          />
+        </div>
+      )}
     </div>
   );
 }

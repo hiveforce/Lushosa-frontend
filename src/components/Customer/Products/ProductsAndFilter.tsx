@@ -1,4 +1,4 @@
-import ProductCard from "../../ui/ProductCard";
+import ProductCard from "../../../ui/ProductCard";
 import CategoryFilter from "./CategoryFilter";
 import PriceFilter from "./PriceFilter";
 import TagsFilter from "./TagsFilter";
